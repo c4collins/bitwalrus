@@ -1,0 +1,244 @@
+@font-face
+{
+	font-family:OnRamp;
+	src: url('../font/ONRAMP.ttf');
+}
+
+.clear{
+	clear:both;
+	line-height:0.25em;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color:#d9d9d9;
+	background-image:url('../img/bitcoin-bg.png');
+	background-position: 0px 370px;
+	background-repeat:repeat-x;
+	padding:0;
+	margin:0;
+}
+
+div, p {
+	margin:0;
+	padding:0;
+}
+
+#page-header {
+    background-color:#9e005d;
+    height:160px;
+    box-shadow: 0px 10px 2px #cacaca;
+}
+#page-header.active #page-header-topper {
+	position:relative;
+	height: 8px;
+	background-color:#28a7df;
+	box-shadow: 0px 2px 4px #28a7df;
+	z-index:99;
+}
+
+
+#page-main-wrapper{
+	background-color:#ebebeb;
+	margin:4px auto 0 auto;
+	width:840px;
+    box-shadow: 7px 0px 2px -4px #cacaca, -7px 0px 2px -4px #cacaca;
+}
+
+#page-main{
+	position:relative;
+	top:-160px;
+}
+
+#sidebar-wrapper {
+	width:330px;
+	float:left;
+	margin-bottom:-160px;
+}
+
+#widebar-wrapper {
+	width:865px;
+	margin-bottom:-160px;
+}
+
+.input-field-container{
+	width: 48%;
+	float:left;
+}
+
+#logo-large {
+	height:262px;
+	background-image:url('../img/bw-logo-lg.png');
+	background-repeat:none;
+}
+#logo-small {
+	position: relative;
+	top:-45px;
+	left:-45px;
+	height:164px;
+	width:309px;
+	background-image:url('../img/bw-logo-sm.png');
+	background-repeat:none;
+	float:left;
+}
+
+#header-text{
+	text-align:center;
+	line-height:100px;
+	font-family: OnRamp, serif;
+	font-size:36px;
+	color:#ebebeb;
+	position: relative;
+	left:17px;
+}
+
+#sidebar-text-wrapper{
+	text-align:center;
+}
+#sidebar-text-wrapper a{
+	margin:0 50px;
+	font-family: "Open Sans", sans-serif;
+	font-size:16px;
+	color:#9d005d;
+}
+
+#sub-logo-text{
+	color:#25aae1;
+	font-family: "Open Sans", sans-serif;
+	font-size:16px;
+	margin:50px;
+}
+
+#mainbar-wrapper{
+	width:500px;
+	margin-left:335px;
+}
+
+.wallet-wrapper {
+	text-align:center;
+	margin-bottom:29px;
+	width:535px;
+	background: #27aae0; /* Old browsers */
+	background: -moz-linear-gradient(left, #27aae0 0%, #49c1ea 50%, #27aae0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#27aae0), color-stop(50%,#49c1ea), color-stop(100%,#27aae0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #27aae0 0%,#49c1ea 50%,#27aae0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #27aae0 0%,#49c1ea 50%,#27aae0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #27aae0 0%,#49c1ea 50%,#27aae0 100%); /* IE10+ */
+	background: linear-gradient(to right, #27aae0 0%,#49c1ea 50%,#27aae0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27aae0', endColorstr='#27aae0',GradientType=1 ); /* IE6-9 */
+	box-shadow: 10px 18px 1px -10px #cdcdcd;
+}
+
+.box-border{
+	border-style:dashed;
+	border-color:#12729a;
+	border-radius:15px;
+	margin:10px 10px -10px 10px;
+	padding:30px;
+}
+.wallet-header{
+	font-family: OnRamp, serif;
+	font-size:42px;
+	color:#12729a;
+	text-shadow: -1px -1px 2px #28a7df, 
+				1px 1px 2px #ebebeb;
+}
+
+.wallet-main ::-webkit-input-placeholder { color: #25aae1; }
+.wallet-main :-moz-placeholder { color: #25aae1; }
+.wallet-main ::-moz-placeholder { color: #25aae1; }
+.wallet-main :-ms-input-placeholder { color: #25aae1; }
+
+#wallet-label {
+	font-family: "Open Sans", serif;
+	font-size: 24px;
+	color:#ebebeb;
+	margin:-10px auto 10px;
+}
+
+form input{
+	line-height: 58px;
+	font-family: OnRamp, serif;
+	font-size: 42px;
+	text-align:right;
+	background-color:#12729a;
+	border:0px;
+	margin-bottom:15px;
+	padding:0 20px;
+	border-radius:2px;
+	box-shadow: -1px -1px 2px #28a7df, 
+				1px 1px 2px #ebebeb;
+}
+input#wallet-username, input#wallet-password {
+	text-align: left;
+	}
+
+input#wallet-balance {
+	font-size:60px;
+	width:60%;
+	background-image:url('../img/xbt-symbol.png');
+	background-repeat: no-repeat;
+}
+input#wallet-balance::-webkit-input-placeholder { color: #ebebeb; }
+input#wallet-balance:-moz-placeholder { color: #ebebeb; }
+input#wallet-balance::-moz-placeholder { color: #ebebeb; }
+input#wallet-balance:-ms-input-placeholder { color: #ebebeb; }
+
+form label {
+	font-family: OnRamp, serif;
+	font-size:26px;
+	color:#12729a;
+}
+
+label#wallet-balance-label{
+	padding:0 10px;
+	font-size:36px;
+	color:#d9d9d9;
+}
+
+form button{
+	width:40%;
+	background-color:#a20063;
+	color:#ececec;
+	font-family: OnRamp, serif;
+	font-size: 42px;
+	line-height:40px;
+	border: 0px;
+	box-shadow:-1px 8px 3px #8e0057;
+	border-bottom: solid #b90071 1px;
+}
+
+button#wallet-account{
+	border-color:#54c6ea;
+	background-color:#26abe1;
+	box-shadow:-1px 8px 3px #13739b;
+	width:70%;
+	margin-top:20px;
+}
+
+.input-field-container form button {
+	width:30%;
+	margin-left:60%;
+	font-size:30px;
+	line-height:32px;
+}
+
+.box-wrap{
+	margin-left:506px;
+	background-image:url('../img/wallet-bottom-wedge.png');
+	background-repeat: no-repeat;
+	height:29px;
+	position:relative;
+	top:33px;
+}
+
+#footer-copyright{
+	text-align:center;
+	font-size:14px;
+	font-family: 'Open Sans', sans-serif;
+	color:#a3a3a3;
+	padding-bottom:15px;
+}
